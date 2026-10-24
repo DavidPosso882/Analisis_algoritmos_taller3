@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+# Java
+*.class
+target/
+out/
+.gradle/
+
+# Herramientas y temporales
+.vscode/*.log
+*.tmp
+*.log
+*.bak
+Thumbs.db
+.DS_Store
+
+# No ignorar:
+# - Punto_1/datos/
+# - Punto_1/resultados/
+# - Punto_1/graficas/
+# - Punto_2/data/
+# - Punto_2/results/
+# - Punto_2/plots/

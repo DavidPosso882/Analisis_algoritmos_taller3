@@ -1,0 +1,73 @@
+algoritmo,lenguaje,variante,n,rep1_ms,rep2_ms,rep3_ms,rep4_ms,rep5_ms,promedio_ms,desv_std_ms,medido_o_estimado,notas
+insertion_sort,python,aleatoria,1000,11.523,11.354,11.739,11.370,11.361,11.469,0.166,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+insertion_sort,python,aleatoria,10000,1217.251,1136.250,1210.415,1220.855,1241.685,1205.291,40.320,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+insertion_sort,python,aleatoria,100000,152732.271,151212.933,151515.489,151913.299,150762.589,151627.316,747.443,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+insertion_sort,python,aleatoria,1000000,15162731.600,15162731.600,15162731.600,15162731.600,15162731.600,15162731.600,0.000,estimado,NO ejecutado (O(n^2) en Python: rep estimada ~4.2 h); estimado por extrapolacion cuadratica desde promedio medido aleatoria n=100000 (151627.316 ms) x100
+insertion_sort,python,ascendente,1000,0.072,0.077,0.064,0.063,0.065,0.068,0.006,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+insertion_sort,python,ascendente,10000,0.564,0.547,0.543,0.553,0.547,0.551,0.008,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+insertion_sort,python,ascendente,100000,5.552,5.810,5.813,5.868,5.862,5.781,0.131,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+insertion_sort,python,ascendente,1000000,58.030,78.720,69.429,54.798,54.654,63.126,10.607,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+insertion_sort,python,descendente,1000,25.159,23.198,22.514,23.240,23.260,23.474,0.992,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+insertion_sort,python,descendente,10000,2420.214,2399.462,2291.410,2261.674,2353.272,2345.207,68.019,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+insertion_sort,python,descendente,100000,228702.356,230433.244,231920.023,233814.334,247382.037,234450.399,7470.143,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado; reps 1-4 de corrida medir_celda.py interrumpida por caida del backend (verificadas OK) + rep5 de corrida cont_cell.py con protocolo identico (harness no permite reanudar)
+insertion_sort,python,descendente,1000000,23445039.9,23445039.9,23445039.9,23445039.9,23445039.9,23445039.9,0.0,estimado,"Estimado cuadrático x100 desde descendente 100K MEDIDO (234450.399 ms, 5/5 OK); NO ejecutado (horas por rep)"
+dual_pivot_quicksort,python,aleatoria,1000,0.515,0.514,0.486,0.502,0.485,0.501,0.015,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+dual_pivot_quicksort,python,aleatoria,10000,6.409,6.646,6.407,6.380,6.525,6.473,0.111,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+dual_pivot_quicksort,python,aleatoria,100000,88.532,86.364,87.355,113.029,105.270,96.110,12.239,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+dual_pivot_quicksort,python,aleatoria,1000000,1645.527,1569.396,1497.034,1631.879,1613.034,1591.374,60.053,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+dual_pivot_quicksort,python,ascendente,1000,8.624,8.764,8.864,8.827,8.868,8.789,0.101,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+dual_pivot_quicksort,python,ascendente,10000,883.332,878.231,841.396,878.100,833.261,862.864,23.582,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+dual_pivot_quicksort,python,ascendente,100000,92016.604,92130.084,90662.574,90368.527,91198.983,91275.354,787.985,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+dual_pivot_quicksort,python,ascendente,1000000,9127535.4,9127535.4,9127535.4,9127535.4,9127535.4,9127535.4,0.0,estimado,"Estimado cuadrático x100 desde ascendente 100K MEDIDO (91275.354 ms, 5/5 OK, sin RecursionError); NO ejecutado a 1M (horas por rep)"
+dual_pivot_quicksort,python,descendente,1000,8.847,8.968,8.894,9.024,9.027,8.952,0.080,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+dual_pivot_quicksort,python,descendente,10000,972.068,987.077,1036.316,990.234,977.789,992.697,25.436,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+dual_pivot_quicksort,python,descendente,100000,119058.818,118756.996,119356.735,117485.138,117025.460,118336.629,1022.629,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+dual_pivot_quicksort,python,descendente,1000000,11833662.9,11833662.9,11833662.9,11833662.9,11833662.9,11833662.9,0.0,estimado,"Estimado cuadrático x100 desde descendente 100K MEDIDO (118336.629 ms, 5/5 OK, sin RecursionError); NO ejecutado a 1M (horas por rep)"
+merge_sort,python,aleatoria,1000,1.396,1.424,1.414,1.415,1.406,1.411,0.011,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+merge_sort,python,aleatoria,10000,18.307,18.856,18.563,18.458,18.239,18.484,0.243,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+merge_sort,python,aleatoria,100000,214.932,217.642,227.732,219.923,221.872,220.420,4.839,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+merge_sort,python,aleatoria,1000000,3506.130,3530.627,3605.998,3388.229,3548.320,3515.861,80.282,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+merge_sort,python,ascendente,1000,2.084,1.275,1.254,1.260,1.280,1.431,0.366,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+merge_sort,python,ascendente,10000,16.555,15.679,16.088,15.706,15.032,15.812,0.562,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+merge_sort,python,ascendente,100000,187.978,188.794,189.051,188.512,189.119,188.691,0.465,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+merge_sort,python,ascendente,1000000,2073.810,2073.789,2075.165,2091.471,2164.357,2095.718,39.092,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+merge_sort,python,descendente,1000,1.221,1.231,1.222,1.231,1.218,1.225,0.006,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+merge_sort,python,descendente,10000,15.823,15.862,15.769,15.801,15.715,15.794,0.056,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+merge_sort,python,descendente,100000,188.188,186.873,192.782,185.122,186.050,187.803,3.003,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+merge_sort,python,descendente,1000000,2093.105,2101.211,2107.496,2105.209,2101.161,2101.637,5.484,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+heap_sort,python,aleatoria,1000,1.316,1.332,1.297,1.312,1.326,1.317,0.014,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+heap_sort,python,aleatoria,10000,18.657,18.739,18.793,18.745,18.876,18.762,0.080,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+heap_sort,python,aleatoria,100000,314.284,294.825,276.905,281.619,297.414,293.010,14.700,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+heap_sort,python,aleatoria,1000000,4922.621,4998.164,5071.542,4964.386,4932.007,4977.744,60.257,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+heap_sort,python,ascendente,1000,1.400,1.416,1.415,1.721,1.475,1.486,0.135,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+heap_sort,python,ascendente,10000,21.331,19.589,19.594,19.725,19.737,19.995,0.750,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+heap_sort,python,ascendente,100000,245.542,272.849,236.768,237.763,239.017,246.388,15.184,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+heap_sort,python,ascendente,1000000,2943.221,2957.395,2950.234,2937.025,3050.877,2967.750,47.090,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+heap_sort,python,descendente,1000,1.203,1.200,1.205,1.196,1.187,1.198,0.007,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+heap_sort,python,descendente,10000,18.654,17.508,17.352,17.679,17.438,17.726,0.532,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+heap_sort,python,descendente,100000,235.510,270.836,238.193,238.448,241.903,244.978,14.632,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+heap_sort,python,descendente,1000000,2820.291,2872.210,2915.526,2961.008,2985.090,2910.825,66.602,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+radix_sort,python,aleatoria,1000,1.536,1.509,1.864,1.625,1.609,1.629,0.140,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+radix_sort,python,aleatoria,10000,16.538,16.181,16.322,16.289,16.564,16.379,0.166,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+radix_sort,python,aleatoria,100000,217.354,234.661,292.776,225.879,229.426,240.019,30.157,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+radix_sort,python,aleatoria,1000000,4467.977,4458.000,4515.061,4471.594,4477.715,4478.069,21.881,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+radix_sort,python,ascendente,1000,1.741,1.814,1.521,1.500,1.491,1.613,0.152,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+radix_sort,python,ascendente,10000,15.262,15.313,15.224,15.173,15.059,15.206,0.097,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+radix_sort,python,ascendente,100000,211.400,198.846,238.355,219.899,256.223,224.945,22.629,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+radix_sort,python,ascendente,1000000,3241.149,3176.114,3173.908,3194.731,3262.893,3209.759,40.161,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+radix_sort,python,descendente,1000,1.496,1.491,1.490,1.479,1.490,1.489,0.006,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+radix_sort,python,descendente,10000,34.526,16.603,17.010,19.400,16.393,20.786,7.774,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+radix_sort,python,descendente,100000,213.139,207.405,209.619,211.107,254.180,219.090,19.728,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+radix_sort,python,descendente,1000000,3339.804,3321.158,3412.710,3234.980,3265.910,3314.913,68.945,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+bucket_sort,python,aleatoria,1000,0.486,1.556,0.349,0.399,0.341,0.626,0.523,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+bucket_sort,python,aleatoria,10000,3.137,3.691,3.117,3.137,3.128,3.242,0.251,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+bucket_sort,python,aleatoria,100000,144.583,146.948,145.612,145.482,144.665,145.458,0.954,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+bucket_sort,python,aleatoria,1000000,11737.476,11968.038,12215.125,12339.411,12268.932,12105.796,248.887,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+bucket_sort,python,ascendente,1000,0.337,0.816,0.351,0.359,0.321,0.437,0.213,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+bucket_sort,python,ascendente,10000,1.816,2.639,1.811,1.828,1.868,1.992,0.362,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+bucket_sort,python,ascendente,100000,29.558,24.180,21.949,29.651,27.332,26.534,3.393,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+bucket_sort,python,ascendente,1000000,185.856,192.008,182.100,209.410,185.636,191.002,10.890,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+bucket_sort,python,descendente,1000,0.367,0.713,0.345,0.347,0.332,0.421,0.164,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+bucket_sort,python,descendente,10000,3.980,4.567,4.059,4.191,4.259,4.211,0.227,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+bucket_sort,python,descendente,100000,239.633,239.875,240.081,239.636,238.659,239.577,0.546,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado
+bucket_sort,python,descendente,1000000,23030.075,23495.048,23009.088,23161.777,23238.284,23186.855,196.493,medido,1 calentamiento no contado; 5 reps sobre copia fresca; orden verificado

@@ -1,0 +1,7 @@
+experiment_id,algorithm,language,input_variant,n,experiment_type,position,key_set_id,key_presence,repetition_1_ns,repetition_2_ns,repetition_3_ns,repetition_4_ns,repetition_5_ns,mean_ns,stddev_ns,status,is_estimated,estimate_method,error_message,repetitions,searches_per_repetition,warmup_iterations,observations
+all_keys_linear_1000_keys_1000,linear,python,asc_1000,1000,all_keys,,keys_1000,mixed,43390700,,,,,43390.7,0.0,medido,false,,,1,1000,0,
+all_keys_binary_1000_keys_1000,binary,python,asc_1000,1000,all_keys,,keys_1000,mixed,2116100,,,,,2116.1,0.0,medido,false,,,1,1000,0,
+all_keys_ternary_1000_keys_1000,ternary,python,asc_1000,1000,all_keys,,keys_1000,mixed,2435100,,,,,2435.1,0.0,medido,false,,,1,1000,0,
+all_keys_jump_1000_keys_1000,jump,python,asc_1000,1000,all_keys,,keys_1000,mixed,4473500,,,,,4473.5,0.0,medido,false,,,1,1000,0,
+all_keys_interpolation_1000_keys_1000,interpolation,python,asc_1000,1000,all_keys,,keys_1000,mixed,1547000,,,,,1547.0,0.0,medido,false,,,1,1000,0,
+all_keys_exponential_1000_keys_1000,exponential,python,asc_1000,1000,all_keys,,keys_1000,mixed,2637700,,,,,2637.7,0.0,medido,false,,,1,1000,0,
